@@ -33,7 +33,7 @@ echo $maxrep;
 
 function palabrasrepet(){
    $texto = $_REQUEST ["comentario"];
-   $palabra = str_split($texto); //Lo  que hace la fucnion str_split es convertirte la variable texto a un array
+   $palabra = explode("",$texto); //Lo  que hace la fucnion str_split es convertirte la variable texto a un array
    $valores = array_count_values ($palabra); //Lo que hace la funcion de count values es contarte los valores 1 por 1
    $max = 0; //Para inicializar la variable
 
